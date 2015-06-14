@@ -9,8 +9,8 @@ RUN echo extension=intl.so >> /usr/local/etc/php/conf.d/ext-intl.ini
 RUN docker-php-ext-install mysqli
 RUN a2enmod rewrite
 
-ENV VERSION 1.24.2
-ENV SHORT_VERSION 1.24
+ENV VERSION 1.25.1
+ENV SHORT_VERSION 1.25
 
 ADD http://releases.wikimedia.org/mediawiki/$SHORT_VERSION/mediawiki-$VERSION.tar.gz /usr/src/mediawiki.tar.gz
 
